@@ -1,0 +1,6 @@
+br\com\zup\zupbackend\dao\ProdutoDao.class
+br\com\zup\zupbackend\entidade\Produto.class
+br\com\zup\zupbackend\rest\ProdutoEndPoint.class
+br\com\zup\zupbackend\service\IProdutoService.class
+br\com\zup\zupbackend\serviceimpl\ProdutoServiceImpl.class
+br\com\zup\zupbackend\dao\ProdutoRepository.class

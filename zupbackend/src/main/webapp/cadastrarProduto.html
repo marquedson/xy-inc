@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zup Backend as a Service</title>
+</head>
+<body>
+	<h2>Bem vindo ao Zup Backend as a Service.</h2>
+	<h3>Cadastro de produto</h3>
+	<form action="rest/produto/adicionar" method="post">
+		<label for="id">ID:</label>
+		<input type="text" name="id" />
+		<br>
+		<br>
+		
+		 <label for="id">Nome:</label>
+        <input name="nome" type="text" />
+        <br>
+        <br>
+		
+		<label for="id">Descrição:</label>
+        <input name="descricao" type="text" />
+        <br>
+        <br>
+        
+		<label for="id">Valor:</label>
+        <input name="valor" type="text" />
+        <br>
+        <br>
+        
+		<input type="submit" value="Adicionar" title="Adicionar produto" /> | 
+		<a href="/zup-backend">Voltar</a>
+	</form>
+</body>
+</html>

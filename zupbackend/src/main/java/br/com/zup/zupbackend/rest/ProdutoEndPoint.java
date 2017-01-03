@@ -1,6 +1,7 @@
 package br.com.zup.zupbackend.rest;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.ws.rs.Consumes;
@@ -34,17 +35,19 @@ public class ProdutoEndPoint implements Serializable {
 	@GET
 	@Path("/listar")
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<Produto> listarProdutos() {
-
-		return produtoService.listarTodos();
+	public Response listarProdutos() {
+		List<Produto> produtos = new ArrayList<>();
+		produtos = produtoService.listarTodos();
+		return Response.status(Status.OK).entity(produtos).build(); 
 	}
 
 	@GET
 	@Path("/buscar/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Produto getProduto(@PathParam("id") Long id) {
-
-		return produtoService.recuperarPorId(id);
+	public Response getProduto(@PathParam("id") Long id) {
+		Produto produto = new Produto();
+		produto = produtoService.recuperarPorId(id);
+		return Response.status(Status.OK).entity(produto).build();
 	}
 	
 	@POST

@@ -12,7 +12,7 @@ Tecnologias utilizadas:
 - Implementação REST Jersey 1.8
 - Container Java EE Tomcat 8.5.9
 - Maven
-Para os testes:
+- Para os testes:
 - JUnit 4.12
 - Rest Assure para rodar os testes de unidade
 

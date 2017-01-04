@@ -11,7 +11,10 @@ Tecnologias utilizadas:
 - Especificação REST JAX-RS 1.1.1
 - Implementação REST Jersey 1.8
 - Container Java EE Tomcat 8.5.9
-
+- Maven
+Para os testes:
+- JUnit 4.12
+- Rest Assure para rodar os testes de unidade
 
 
 # Preparação do ambiente de para execução do projeto
@@ -52,3 +55,14 @@ Em "Accept", text/plain;
 Em "Method", mude para DELETE;
 Em "URL", insira a url http://localhost:8080/zup-backend/rest/produto/remover/3
 Clique em SEND. Para ver o retorno clique em "Response (Raw)"
+
+# Passos para rodar os testes de unidade
+Para rodar os testes de unidade com JUnit:
+- Suba o tomcate no eclipse;
+- Execute os testes via JUnit na classe ProdutoWSTest.java
+
+# Observação
+Por ser um projeto com maven, após importar o projeto no eclipse, pode ser que seja necessário executar maven clean e maven install, 
+para baixar e instalar as dependências
+
+
